@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='Polymer Starter Kit On Steroids')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    title Starter Kit On Steroids
+
+    script(src='./bower_components/webcomponentsjs/webcomponents-lite.js')
+
+    link(rel='import' href='./components/components.html')
+
+  body(unresolved fullbleed layout vertical)
+    app-router#router
+      app-route(path='/' import='./components/pages/demo-page/demo-page.html')
+      app-route(path='*' import='./components/pages/not-found-page/not-found-page.html')

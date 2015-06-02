@@ -1,0 +1,26 @@
+link(rel='import' href='../../../bower_components/iron-icons/iron-icons.html')
+
+dom-module(id='x-demo')
+  style.
+    :host {
+      display: inline-block;
+    }
+    iron-icon {
+      fill: blue;
+    }
+
+  template
+    iron-icon(icon='polymer')
+    span {{ label }}
+
+script
+  :babel
+    Polymer({
+      properties: {
+        label: {
+          type: String,
+          value: 'Hello'
+        }
+      },
+      is: 'x-demo'
+    })

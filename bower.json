@@ -1,0 +1,29 @@
+{
+  "name": "polymer-starter-kit-on-steroids",
+  "version": "0.0.0",
+  "authors": [
+    "Antono Vasiljev <antono.vasiljev@gmail.com>"
+  ],
+  "description": "better starter kit",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "polymer",
+    "web",
+    "components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "app-router": "~2.6.1",
+    "polymer": "~1.0.2",
+    "iron-icons": "PolymerElements/iron-icons#~1.0.1"
+  }
+}

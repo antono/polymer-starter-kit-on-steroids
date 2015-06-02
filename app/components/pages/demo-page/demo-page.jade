@@ -1,0 +1,15 @@
+link(rel='import' href='../../components.html')
+link(rel='import' href='../../elements/x-demo/x-demo.html')
+
+dom-module(id='demo-page')
+  template
+    h1 Hello, web developer
+
+    x-demo(label='Welcome to polymer starter kit on steroids')
+
+script
+  :babel
+    Polymer({
+      is: 'demo-page'
+    })
+    
