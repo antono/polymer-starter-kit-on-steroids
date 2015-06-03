@@ -18,7 +18,9 @@ var plugins = require('gulp-load-plugins')();
 var del = require('del');
 var runSequence = require('run-sequence');
 var path = require('path');
+
 var DIST = 'dist';
+var BASE_URL = '';
 
 //
 // Task definitions
@@ -115,9 +117,11 @@ gulp.task('jade', function () {
   // https://github.com/babel/jade-babel
   var jade = require('jade');
   var babel = require('jade-babel');
+
   jade.filters.babel = babel({});
 
   return gulp.src('app/**/*.jade')
+    .pipe(plugins.replace('BASE_URL', BASE_URL))
     .pipe(plugins.jade({
       jade: jade,
       pretty: true

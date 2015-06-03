@@ -29,7 +29,7 @@
     "gulp-minify-html": "^0.1.4",
     "gulp-postcss": "^5.0.1",
     "gulp-rename": "^1.2.0",
-    "gulp-replace": "^0.4.0",
+    "gulp-replace": "^0.5.3",
     "gulp-size": "^1.0.0",
     "gulp-sourcemaps": "^1.5.1",
     "gulp-symlink": "^2.1.0",
