@@ -2,8 +2,10 @@
 
 ## Difference from oficial starter kit
 
+- [Babel](https://babeljs.io/) + [Core.js](https://github.com/zloirock/core-js)
 - [PostCSS](https://github.com/postcss/postcss) with plugins for SASS lovers
-- [Jade](http://jade-lang.com/) instead of HTML
+- [Jade](http://jade-lang.com/) with inline ES6 support
+- Symlink bower components
 - Split locations: components/pages and components/elements
 
 ## Quickstart
@@ -12,6 +14,7 @@
 git clone https://github.com/antono/polymer-starter-kit-on-steroids.git
 cd polymer-starter-kit-on-steroids
 npm install
+bower install
 gulp server
 ```
 ## Contributors
