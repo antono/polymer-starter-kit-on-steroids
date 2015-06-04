@@ -10,8 +10,13 @@ dom-module(id='x-demo')
     }
 
   template
-    iron-icon(icon='polymer')
-    span {{ label }}
+    p
+      iron-icon(icon='polymer')
+      span {{ label }}
+    ul
+      template(is="dom-repeat" items="{{ items }}")
+        li {{ item }}
+
 
 script
   :babel
@@ -20,7 +25,14 @@ script
         label: {
           type: String,
           value: 'Hello'
+        },
+        items: {
+          type: Array,
+          value: []
         }
       },
-      is: 'x-demo'
+      is: 'x-demo',
+      ready: function () {
+        this.items = Array.from(10);
+      }
     })

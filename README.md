@@ -2,7 +2,7 @@
 
 ## Difference from oficial starter kit
 
-- [Babel](https://babeljs.io/)
+- [Babel](https://babeljs.io/) + [Core.js](https://github.com/zloirock/core-js)
 - [PostCSS](https://github.com/postcss/postcss) with plugins for SASS lovers
 - [Jade](http://jade-lang.com/)
 - Split locations: components/pages and components/elements
