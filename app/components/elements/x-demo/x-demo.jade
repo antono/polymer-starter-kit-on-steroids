@@ -15,7 +15,9 @@ dom-module(id='x-demo')
       span {{ label }}
     ul
       template(is="dom-repeat" items="{{ items }}")
-        li {{ item }}
+        li
+          | Hello 
+          span {{ item }}
 
 
 script
@@ -33,6 +35,6 @@ script
       },
       is: 'x-demo',
       ready: function () {
-        this.items = Array.from(10);
+        this.items = Array.from(10).map(x => x * x * x);
       }
     })
