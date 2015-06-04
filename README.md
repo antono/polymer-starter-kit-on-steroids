@@ -2,8 +2,9 @@
 
 ## Difference from oficial starter kit
 
+- [Babel](https://babeljs.io/)
 - [PostCSS](https://github.com/postcss/postcss) with plugins for SASS lovers
-- [Jade](http://jade-lang.com/) instead of HTML
+- [Jade](http://jade-lang.com/)
 - Split locations: components/pages and components/elements
 
 ## Quickstart
