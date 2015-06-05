@@ -13,6 +13,7 @@
 git clone https://github.com/antono/polymer-starter-kit-on-steroids.git
 cd polymer-starter-kit-on-steroids
 npm install
+bower install
 gulp server
 ```
 ## Contributors
