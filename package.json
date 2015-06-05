@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:SphereConsultingInc/chairlift.git"
+    "url": "https://github.com/antono/polymer-starter-kit-on-steroids.git"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.1.0",
