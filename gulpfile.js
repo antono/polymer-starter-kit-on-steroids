@@ -168,9 +168,9 @@ gulp.task('server', ['watch'], function() {
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
   runSequence(
-    ['symlink', 'styles'],
+    ['styles'],
     'jade', 'babel',
-    ['jshint', 'images', 'fonts'],
+    ['jshint', 'images', 'fonts', 'symlink'],
     'vulcanize',
     cb);
 });
