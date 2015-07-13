@@ -85,13 +85,6 @@ gulp.task('images', function () {
     .pipe(plugins.size({title: 'images'}));
 });
 
-// Copy All Files At The Root Level (app)
-gulp.task('copy', function () {
-  return gulp.src(['app/*'], { dot: true })
-    .pipe(gulp.dest(DIST))
-    .pipe(plugins.size({title: 'copy'}));
-});
-
 gulp.task('symlink', function () {
   return gulp.src('./bower_components/')
     .pipe(plugins.symlink(DIST + '/bower_components'));
@@ -175,7 +168,7 @@ gulp.task('server', ['watch'], function() {
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
   runSequence(
-    ['copy', 'symlink', 'styles'],
+    ['symlink', 'styles'],
     'jade', 'babel',
     ['jshint', 'images', 'fonts'],
     'vulcanize',
