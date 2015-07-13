@@ -46,7 +46,7 @@ var processors = [
   require('postcss-host'),
   require('autoprefixer-core')({ browsers: BROWSERS }),
   require('postcss-nested'),
-  require('postcss-log-warnings')
+  require('postcss-reporter')
 ];
 
 // Compile and Automatically Prefix Stylesheets
