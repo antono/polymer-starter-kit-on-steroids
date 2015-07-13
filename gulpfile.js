@@ -44,7 +44,7 @@ var processors = [
   require('postcss-calc'),
   require('postcss-discard-comments'),
   require('postcss-host'),
-  require('autoprefixer-core'),
+  require('autoprefixer-core')({ browsers: BROWSERS }),
   require('postcss-nested'),
   require('postcss-log-warnings')
 ];
