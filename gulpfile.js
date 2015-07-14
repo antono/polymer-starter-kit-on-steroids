@@ -143,7 +143,7 @@ gulp.task('clean', del.bind(null, [DIST]));
 gulp.task('watch', ['default'], function () {
   gulp.watch(['app/**/*.jade'], ['jade']);
   gulp.watch(['app/styles/**/*.css'], ['styles']);
-  gulp.watch(['app/components/**/*.css'], ['components']);
+  gulp.watch(['app/components/**/*.css'], ['styles']);
   gulp.watch(['app/{scripts,components}/**/*.js'], ['jshint', 'babel']);
 });
 
