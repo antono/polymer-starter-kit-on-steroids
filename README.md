@@ -17,6 +17,23 @@ npm install
 bower install
 gulp server
 ```
+
+## Tests
+
+### In browser
+
+```bash
+gulp server
+```
+And visit http://localhost:7777/test/
+
+### Via command line
+
+```bash
+npm install -g web-component-tester
+wct
+```
+
 ## Contributors
 
 Gulpfile based on official [polymer starter kit](https://developers.google.com/web/tools/polymer-starter-kit/index)

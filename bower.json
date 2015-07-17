@@ -26,5 +26,8 @@
     "polymer": "~1.0.2",
     "iron-icons": "PolymerElements/iron-icons#~1.0.1",
     "core.js": "~0.9.14"
+  },
+  "devDependencies": {
+    "web-component-tester": "~3.3.2"
   }
 }

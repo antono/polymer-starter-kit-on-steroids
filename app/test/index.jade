@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    script(src='BASE_URL/bower_components/core.js/client/core.js')
+    script(src='BASE_URL/bower_components/webcomponentsjs/webcomponents-lite.js')
+    script(src="BASE_URL/bower_components/web-component-tester/browser.js")
+      
+    link(rel='import' href='BASE_URL/components/components.html')
+
+  body
+    script.
+      WCT.loadSuites(['elements/x-demo.html']);

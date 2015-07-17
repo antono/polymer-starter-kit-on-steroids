@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title x-demo-test
+    
+    script(src='BASE_URL/bower_components/core.js/client/core.js')
+    script(src='BASE_URL/bower_components/webcomponentsjs/webcomponents-lite.js')
+    script(src="BASE_URL/bower_components/web-component-tester/browser.js")
+      
+    link(rel='import' href='BASE_URL/components/components.html')
+    link(rel="import" href="BASE_URL/components/elements/x-demo/x-demo.html")
+  body
+    x-demo#fixture
+    script.
+      var el = document.getElementById('fixture');
+      suite('<x-demo>', function() {
+        test('label', function() {
+          assert.equal(el.label, "Hello", 'default label is "Hello"' );
+        });
+      });
