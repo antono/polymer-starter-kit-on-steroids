@@ -14,8 +14,8 @@ html
     x-demo#fixture
     script.
       var el = document.getElementById('fixture');
-      suite('<x-demo>', function() {
-        test('label', function() {
+      describe('<x-demo>', function() {
+        it('has label', function() {
           assert.equal(el.label, "Hello", 'default label is "Hello"' );
         });
       });
