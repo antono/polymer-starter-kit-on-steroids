@@ -40,12 +40,10 @@ var processors = [
     cachebuster: true
   }),
   require('postcss-easings'),
-  require('postcss-custom-properties'),
   require('postcss-calc'),
   require('postcss-discard-comments'),
   require('postcss-host'),
   require('autoprefixer-core')({ browsers: BROWSERS }),
-  require('postcss-nested'),
   require('postcss-reporter')
 ];
 
