@@ -55,7 +55,7 @@
     "psi": "^1.0.4",
     "require-dir": "^0.1.0",
     "run-sequence": "^0.3.6",
-    "web-component-tester": "^3.3.2"
+    "web-component-tester": "^3.3.3"
   },
   "engines": {
     "node": ">=0.12.7"
